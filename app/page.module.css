@@ -1,0 +1,714 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 2.5rem;
+}
+
+.imgResponsive {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.greenText {
+  color: var(--text-green);
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+
+/* --- TOP BANNER --- */
+.topBanner {
+  background-color: var(--primary-red);
+  color: white;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+.timer {
+  background-color: white;
+  color: var(--primary-red);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  margin: 0 0.25rem;
+}
+
+/* --- HERO --- */
+.hero {
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.heroSubtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: #555;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+.heroImage1 {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselSlide {
+  width: 100%;
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.carouselButton {
+  background: white;
+  border: 1px solid #ddd;
+  color: #333;
+  width: 44px;
+  height: 44px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.carouselButton:first-child {
+  left: -22px;
+}
+
+.carouselButton:last-child {
+  right: -22px;
+}
+
+/* --- IDENTIFIED --- */
+.identified {
+  padding: 3rem 1.5rem;
+}
+
+.identifiedGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.idCard {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.idEmoji {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.idCard h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.idCard p {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+/* --- BENEFITS --- */
+.benefits {
+  padding: 3rem 1rem;
+  background-color: #EFE8DF;
+}
+
+.benefitsTitle {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.benefitsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.benefitCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.benefitIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.benefitCard h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.benefitCard p {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+/* --- RECIPES --- */
+.recipes {
+  padding: 3rem 1rem;
+}
+
+.recipesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipeCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.recipeImgWrapper {
+  width: 100%;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+}
+
+.recipeCardBody {
+  padding: 1rem;
+  text-align: center;
+}
+
+.recipeCardBody h4 {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.recipeCardBody p {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.recipesFooterText {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* --- BONUSES --- */
+.bonuses {
+  padding: 3rem 1rem;
+  background-color: #EBEBEB;
+}
+
+.bonusesTitle {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.bonusesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bonusCard {
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bonusImgWrapper {
+  width: 100%;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.bonusContent {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.bonusContent h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.bonusContent p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+.oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.gratisBadge {
+  background-color: #E2F0D9;
+  color: var(--text-green);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid var(--text-green);
+}
+
+/* --- CREATOR --- */
+.creator {
+  padding: 3rem 1rem;
+}
+
+.creatorContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.creatorImgWrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #E8F0E6;
+  border: 2px dashed #A5D6A7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creatorText {
+  text-align: center;
+}
+
+.creatorText h5 {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.creatorText h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.creatorText p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #444;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+/* --- OFFER --- */
+.offerSection {
+  padding: 3rem 1rem;
+  background-color: #FFF;
+}
+
+.offerContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.offerTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.offerSubtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.offerImgWrapper {
+  margin: 0 auto 2rem;
+  max-width: 400px;
+}
+
+.offerList {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.offerRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.offerTotalNormal {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--primary-red);
+}
+
+.offerTotalNormal span {
+  text-decoration: line-through;
+}
+
+.offerDiscountBox {
+  background-color: #FFF9C4;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #D32F2F;
+  margin-bottom: 1.5rem;
+}
+
+.offerPriceBox {
+  border: 2px solid var(--primary-red);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.offerSpecialText {
+  text-align: right;
+  color: var(--primary-red);
+  font-size: 0.8rem;
+}
+
+.offerSpecialText strong {
+  font-size: 1.1rem;
+}
+
+.offerPrice {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary-red);
+  line-height: 1;
+}
+
+.ctaButton {
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--button-green);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.ctaButton:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.secureText {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* --- GUARANTEE --- */
+.guaranteeSection {
+  padding: 2rem 1rem;
+  background-color: #F8FAFC;
+}
+
+.guaranteeContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.guaranteeText h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.guaranteeText p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+/* --- TESTIMONIALS --- */
+.testimonials {
+  padding: 3rem 1rem;
+}
+
+.testimonialsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.testimonialQuote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatarWrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stars {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* --- FAQ --- */
+.faqSection {
+  padding: 3rem 1rem;
+  background-color: #FDFBF9;
+}
+
+.faqList {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faqItem {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.faqQuestion {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 1.25rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faqIcon {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.faqAnswer {
+  padding: 0 1.5rem 1.25rem;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.faqAnswer p {
+  text-align: justify !important;
+  hyphens: auto;
+}
+
+/* --- FOOTER CTA --- */
+.footerCTA {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--bg-beige);
+}
+
+/* --- FOOTER --- */
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+  color: #888;
+  border-top: 1px solid #ddd;
+}
+
+/* --- MEDIA QUERIES (DESKTOP) --- */
+@media (min-width: 768px) {
+  .sectionTitle { font-size: 1.5rem; }
+  .heroTitle { font-size: 2.8rem; }
+  .heroSubtitle { font-size: 1.2rem; }
+  .benefitsTitle { font-size: 1.3rem; }
+  .bonusesTitle { font-size: 1.3rem; }
+  .creatorText h2 { font-size: 1.8rem; }
+  .offerTitle { font-size: 1.5rem; }
+  
+  .identifiedGrid { flex-direction: row; }
+  .idCard { flex: 1; }
+  
+  .benefitsGrid { flex-direction: row; flex-wrap: wrap; }
+  .benefitCard { width: calc(50% - 0.5rem); }
+  
+  .recipesGrid { flex-direction: row; flex-wrap: wrap; }
+  .recipeCard { width: calc(25% - 1.125rem); }
+  
+  .bonusesGrid { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .bonusCard { width: calc(33.33% - 1rem); }
+  
+  .creatorContainer { flex-direction: row; text-align: left; }
+  .creatorImgWrapper { flex-shrink: 0; }
+  .creatorText { text-align: left; }
+  
+  .guaranteeContainer { flex-direction: row; text-align: left; }
+  .guaranteeText { text-align: left; }
+  
+  .testimonialsGrid { flex-direction: row; }
+  .testimonialCard { flex: 1; }
+}
